@@ -1,10 +1,18 @@
 
+html * {
+    font-family: sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
     height: 100vh;
+}
+
+.content-margin {
+    margin: 0px 10vw;
 }
 
 header {
@@ -35,6 +43,7 @@ li {
 
 .logo {
     font-size: 24px;
+    color: #F9FAF8;
 }
 
 .hero-information {
@@ -46,6 +55,7 @@ li {
 .hero-container {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .main {
@@ -63,19 +73,24 @@ footer {
 
 .hero-img {
     /* Placeholder width and height */
-    height: 225px;
-    width: 500px;
+    width: 50%;
     border-radius: 0px;
     border: 0;
+    margin: 5vh 0;
 }
 
-main{
+.information {
     display: flex;
     flex-direction: column;
+    padding: 1em;
+    padding-bottom: 2em;
 }
 
 .title {
     text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
 }
 
 .card-container {
@@ -92,10 +107,13 @@ main{
 .quote {
     display: flex;
     flex-direction: column;
+    background-color: #E5E7EB;
 }
 
 .quote-author {
     text-align: end;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .cta {
@@ -103,9 +121,28 @@ main{
     justify-content: space-between;
     align-items: center;
     background-color: #3882f6;
+    gap: 150px;
+    border-radius: 8px;
+    padding: 1.5em 4em;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
-.text {
+.quote.content-margin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5em 30vw;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.cta-container {
     display: flex;
     flex-direction: column;
 }
@@ -123,12 +160,35 @@ img {
     border: 3px solid #3882f6;
 }
 
+/* "su" = "sign up" */
+.su {
+    background-color: #3882f6;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 0.25em 1em;
+    margin-top: 0.5em;
+}
+
+.su#su-cta {
+    border: 2px solid white;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: white;
 }
 
 .hero,
 header,
 footer {
     background-color: #1F2937;
+}
+
+footer {
+    padding: 1em
 }
